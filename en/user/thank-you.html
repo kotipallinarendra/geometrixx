@@ -602,18 +602,6 @@ http://chart.apis.google.com/chart?chtt=checkout.html+%2893ms%29&cht=bhs&chxt=x&
             'orderTotal='+orderTotal,
             'orderId=' + orderId);
 	  */
-      alloy("sendEvent", {
-         "xdm": {
-            "commerce": {
-               "order": {
-               "purchaseID": orderId,
-               "purchaseOrderNumber": productId,
-               "currencyCode": "USD",
-               "priceTotal": orderTotal
-               }
-            }
-         }
-      });
       /*s.pageName=s.eVar3=location.pathname; 
       s.products = ";"+productId + ";1;" + orderTotal;
       s.purchaseID = orderId;
